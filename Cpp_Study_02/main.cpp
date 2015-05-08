@@ -6,10 +6,16 @@
 //  Copyright (c) 2015년 ShockRabbit. All rights reserved.
 //
 
-#include <iostream>
+#include "Player.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    Player* pPlayer = new Player;
+    pPlayer->SetPosition(17, 17);
+    pPlayer->SetDamage(27);
+    pPlayer->SetHp(77);
+    
+    pPlayer->PrintPlayerInfo();
+    
+    
     return 0;
 }
